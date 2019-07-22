@@ -14,7 +14,7 @@ $ docker-compose run web_app flask db upgrade
 The command may fail on the first try if the database container is slow to boot up. If it failed, simply rerun the command again.
 Alternatively you can use this command instead:
 ```console
-$ docker-compose run web_app ./wait-for-pg.sh db flask
+$ docker-compose run web_app ./wait-for-pg.sh db flask db upgrade
 ```
 ### 3. Start the dev server
 ```console
