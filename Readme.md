@@ -11,7 +11,7 @@ $ docker-compose build
 ```console
 $ docker-compose run web_app flask db upgrade
 ```
-The command may fail at the first time if the database container is slow to boot up. If it failed, simply rerun the command again.
+The command may fail on the first try if the database container is slow to boot up. If it failed, simply rerun the command again.
 Alternatively you can use this command instead:
 ```console
 $ docker-compose run web_app ./wait-for-pg.sh db flask
