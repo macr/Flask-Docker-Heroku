@@ -27,9 +27,9 @@ You can now start adding code to `app.py`.  The flask development web server is 
 Hit `CTRL-C` to exit.
 
 ### 4. Installing additional packages 
-Uses `pyenv` to manage depency versions but not for virtual environments.
+Uses `pipenv` to manage depency versions but not for virtual environments.
 ```console
-$ docker-compose run web_app pyenv install [package]
+$ docker-compose run web_app pipenv install [package]
 ```
 We still need to rebuild the image if we installed a dependency:
 ```console
